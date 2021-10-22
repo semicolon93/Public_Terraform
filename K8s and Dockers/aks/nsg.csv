@@ -1,0 +1,4 @@
+Name,Priority,SourceAddressPrefix,SourceAddressPrefixes,SourcePortRange,DestinationAddressPrefix,DestinationAddressPrefixes,DestinationPortRange,DestinationPortRanges,Protocol,Access,Direction
+Rule1,1010,AzureLoadBalancer,,*,*,,3443,,Tcp,Allow,Inbound
+Rule2,1020,10.0.0.0/8,,*,,"10.0.3.0/24",,"443,80",Udp,Deny,Outbound
+Rule3,1030,,"10.0.3.0/24",*,Storage,,5672,,ICMP,Allow,Inbound

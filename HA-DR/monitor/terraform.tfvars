@@ -1,0 +1,7 @@
+environment = "Dev"
+resource_group_name = "rg_test_tf"
+action_group_name = "action_group1"
+action_group_short_name = "group1"
+user_name = "user1"
+user_mail_address = "user1@abc.com"
+application_insight_name = "application_insight_tf"

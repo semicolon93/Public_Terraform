@@ -1,0 +1,13 @@
+Name,Priority,SourceAddressPrefix,SourceAddressPrefixes,SourcePortRange,DestinationAddressPrefix,DestinationAddressPrefixes,DestinationPortRange,DestinationPortRanges,Protocol,Access,Direction
+RDP_Port_3389,100,,"172.16.201.0/24,192.168.4.0/24",*,192.168.4.0/24,,3389,,TCP,Allow,Inbound
+Allow_DesktopSubnet_any_TCP,110,192.168.4.0/24,,*,192.168.4.0/24,,*,,TCP,Allow,Inbound
+Allow_DesktopSubnet_any_UDP,120,192.168.4.0/24,,*,192.168.4.0/24,,*,,UDP,Allow,Inbound
+Deny_DesktopSubnet_any_TCP,4090,192.168.4.0/24,,*,192.168.4.0/24,,*,,TCP,Deny,Inbound
+Deny_DesktopSubnet_any_UDP,4091,192.168.4.0/24,,*,192.168.4.0/24,,*,,UDP,Deny,Inbound
+Allow_DesktopSubnet_any_ICMP,4092,192.168.4.0/24,,*,192.168.4.0/24,,*,,ICMP,Allow,Inbound
+Allow_DesktopSubnet_any_TCP_OUT,110,192.168.4.0/24,,*,192.168.4.0/24,,*,,TCP,Allow,Outbound
+Allow_DesktopSubnet_any_UDP_OUT,120,192.168.4.0/24,,*,192.168.4.0/24,,*,,UDP,Allow,Outbound
+Deny_DesktopSubnet_any_TCP_OUT,4090,192.168.4.0/24,,*,192.168.4.0/24,,*,,TCP,Deny,Outbound
+Deny_DesktopSubnet_any_UDP_OUT,4091,192.168.4.0/24,,*,192.168.4.0/24,,*,,UDP,Deny,Outbound
+Allow_DesktopSubnet_any_ICMP_OUT,4092,192.168.4.0/24,,*,192.168.4.0/24,,*,,ICMP,Allow,Outbound
+Allow_RDP_Port_3389_OUT,100,192.168.4.0/24,,*,192.168.4.0/24,,3389,,TCP,Allow,Outbound

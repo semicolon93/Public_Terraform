@@ -1,0 +1,19 @@
+## Blog Info
+wordpressUsername: wpadmin
+wordpressPassword: password
+wordpressEmail: azure.dev@bvmtechnology.com
+wordpressFirstName: BVM
+wordpressLastName: Tech
+wordpressBlogName: BVM’s Blog!
+
+
+## Database Settings
+externalDatabase:
+  host: mydemoserverwp.mysql.database.azure.com
+  user: mysqladminun@mydemoserverwp
+  password: H@Sh1CoR3!
+  database: wpdatabase
+
+## Disabling MariaDB
+mariadb:
+  enabled: false

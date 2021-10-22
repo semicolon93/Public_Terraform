@@ -1,0 +1,15 @@
+environment                     = "DEV"
+kv_name                         = "KeyVault01-tf"
+kv_rg_name                      = "rg_tf"
+vnet_rg                         = "rg_vnet_tf" #VPN gateway will be created in the same resource group as the vnet
+vnet_name                       = "vnet_tf"
+vpngw_name                      = "vpngw_tf"
+vpngw_subnet_name               = "GatewaySubnet" #This name cannot be changed
+vpngw_subnet_address_prefixes   = ["192.168.200.0/26"]
+vpn_publicIP_sku                = "Basic"
+vpngw_active_active             = false
+vpngw_enable_bgp                = false
+vpngw_sku                       = "Basic"
+vpngw_client_address_prefixes   = ["172.16.201.0/24"]
+vpngw_rootcertificate_name      = "bvmtroot"
+log_analytics_workspace_id      = "/subscriptions/f89af65a-c2f3-484e-a97d-3dc9bf809c5b/resourcegroups/rg_test_tf/providers/microsoft.operationalinsights/workspaces/loganalytics-tf"
